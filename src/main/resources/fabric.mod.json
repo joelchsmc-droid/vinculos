@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "vinculos",
+  "version": "${version}",
+  "name": "Vínculos",
+  "description": "Enamora mobs con una flor: menú rosita, barra de afecto, globos de estado y una pequeña probabilidad de que se incomoden. Prueba inicial con el Warden.",
+  "authors": [],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["vinculos.VinculosMod"]
+  },
+  "mixins": ["vinculos.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
