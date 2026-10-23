@@ -112,7 +112,7 @@ public class VinculosMod implements ModInitializer {
 	}
 
 	private static void calm(Warden warden, ServerPlayer player) {
-		warden.getAngerManagement().removeAnger(player);
+		warden.clearAnger(player);
 		if (warden.getTarget() == player) {
 			warden.getBrain().eraseMemory(MemoryModuleType.ATTACK_TARGET);
 			warden.setTarget(null);
